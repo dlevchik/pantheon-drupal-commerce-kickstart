@@ -5,6 +5,9 @@
 # Check github authentication; ignore status code 1 returned from this command
 ssh -T git@github.com
 
+export UPSTREAM_REPO_REMOTE_URL="git@github.com:pantheon-upstreams/drupal-composer-managed.git"
+export DRUPAL_10_REPO_REMOTE_URL="git@github.com:pantheon-upstreams/drupal-10-composer-managed.git"
+
 # Fail fast on any future errors.
 set -euo pipefail
 
