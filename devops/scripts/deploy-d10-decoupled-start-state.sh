@@ -51,4 +51,4 @@ git commit -am "Create new sites with Drupal 10" --author='Pantheon Automation <
 # We need to rewrite history on the D10 upstream to keep the commit SHAs the same,
 # so that newly created sites don't see the diverged commits from the D9 upstream as
 # updates it needs to apply
-git push --force drupal-10-start public:main
+git push --force drupal-10-start drupal-10:main
