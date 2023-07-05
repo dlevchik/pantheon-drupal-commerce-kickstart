@@ -53,26 +53,14 @@
         "drupal/core-recommended": "^10",
         "drupal/default_content": "^2",
         "drush/drush": "^11.4",
-        "pantheon-systems/drupal-integrations": "^10",
-        "pantheon-systems/quicksilver-pushback": "^2.1",
-        "pantheon-upstreams/upstream-configuration": "dev-main",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "pantheon-upstreams/upstream-configuration": "dev-main",
+        "pantheon-systems/drupal-integrations": "^10"
     },
     "require-dev": {
-        "behat/behat": "^3.13",
-        "behat/mink": "^1.10",
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-        "dmore/behat-chrome-extension": "^1.4",
-        "drupal/coder": "^8.3",
-        "drupal/drupal-driver": "^2.2",
-        "drupal/drupal-extension": "^4.2",
-        "drush-ops/behat-drush-endpoint": "^9.4",
-        "genesis/behat-fail-aid": "^3.7",
-        "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "^3.7",
+        "drupal/core-dev": "^10",
         "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "conflict": {
@@ -150,15 +138,6 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "build-assets": "echo 'Nothing to do.'",
-        "unit-test": "echo 'No unit test step defined.'",
-        "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
-        "code-sniff": [
-            "./vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/modules/custom",
-            "./vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/themes/custom",
-            "./vendor/bin/phpcs --standard=DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/modules/custom",
-            "./vendor/bin/phpcs --standard=DrupalPractice --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md --ignore=node_modules,bower_components,vendor ./web/themes/custom"
         ]
     },
     "scripts-descriptions": {
@@ -168,9 +147,6 @@
         "bin-dir": "bin",
         "sort-packages": true,
         "preferred-install": "dist",
-        "platform": {
-            "php": "8.1"
-        },
         "allow-plugins": {
             "composer/installers": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
