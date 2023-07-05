@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-upstreams/drupal-composer-managed",
+    "name": "dlevchik/pantheon-drupal-commerce-kickstart",
     "description": "Install Centarro Commerce Kickstart 3.x project template with composer on Pantheon.",
     "type": "project",
     "license": "MIT",
