@@ -65,7 +65,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
         "squizlabs/php_codesniffer": "^3.7",
-        "phpunit/phpunit": "^8.2",
+        "phpunit/phpunit": "^9.5",
         "behat/behat": "^3.13",
         "behat/mink": "^1.10",
         "genesis/behat-fail-aid": "^3.7",
